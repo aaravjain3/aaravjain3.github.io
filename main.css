@@ -1,192 +1,235 @@
-@import url(https://fonts.googleapis.com/css2?family=Winky+Sans);
-@import url(https://fonts.googleapis.com/css2?family=Comic+Relief);
+@import url(https://fonts.googleapis.com/css2?family=Winky+Sans); /* Imports the 'Winky Sans' font from Google Fonts to be used in the stylesheet */
 
+@import url(https://fonts.googleapis.com/css2?family=Comic+Relief); /* Imports the 'Comic Relief' font from Google Fonts */
 
+/* Styles for all <h1> elements */
 h1{
-  color: black;
-  text-align: center;
-  font-size: 60px;
-  text-decoration: overline underline;
-  font-family: "Ubuntu";
+  color: black; /* Sets text color to black */
+  text-align: center; /* Centers the text horizontally */
+  font-size: 60px; /* Sets font size to 60 pixels */
+  text-decoration: overline underline; /* Adds a line above and below the text */
+  font-family: "Ubuntu"; /* Uses the Ubuntu font for the text */
 }
 
+/* Styles for all <h2> elements */
 h2{
-  font-size: 50px;
-  text-align: center;
-  font-family: "Winky Sans";
-  text-decoration: underline;
+  font-size: 50px; /* Sets font size to 50 pixels */
+  text-align: center; /* Centers the text horizontally */
+  font-family: "Winky Sans"; /* Applies Winky Sans font */
+  text-decoration: underline; /* Underlines the text */
 }
 
+/* Styles for all <h3> elements */
 h3{
-  display:block;
-  margin-left:auto;
-  margin-right:auto;
-  text-align:center;
-  width:50%;
-  height:50%;
-} 
+  display: block; /* Makes the element a block-level element */
+  margin-left: auto; /* Centers the element horizontally left margin auto */
+  margin-right: auto; /* Centers the element horizontally right margin auto */
+  text-align: center; /* Centers text within the element */
+  width: 50%; /* Sets the width to 50% of its container */
+  height: 50%; /* Sets height to 50% of its container */
+}
 
+/* Styles for all <h4> elements */
 h4{
-  font-size:35px;
-  height: 100%; 
-  width:100%;
-  text-align:center;
-  font-weight:bold;
+  font-size: 35px; /* Sets font size to 35 pixels */
+  height: 100%; /* Makes height 100% of its container */
+  width: 100%; /* Makes width 100% of its container */
+  text-align: center; /* Centers the text */
+  font-weight: bold; /* Makes the text bold */
 }
 
- img{
-  float: right;
-  vertical-align: top;
-  text-align: center
-
- }
- img.characterlist{
-  width:171px;
-  height:175px;
-
- }
-
- a.home {
-   text-align: left;
-   transform:translate(-65%, -325%);
-   font-size: 50px;
-   border-radius: 40px;
-   border: 2px solid  rgb(84,148,172);
-   background-color:  rgb(84,148,172);
-   color: whitesmoke;
-   font-family: "Winky Sans";
-   text-decoration: none;
-   padding: 10px 15px;
- }
-
- a.box {
-  text-decoration: none;  
-  display: inline-block;
-  border: 1px solid;
-  padding: 10px 25px;
-  background-color: rgb(84,148,172);
-  color: whitesmoke;
-  font-size: 38px;
-  font-family: "Winky Sans";
- }
 
 
+
+
+/* Styles for all <img> elements */
+img{
+  float: right; /* Aligns the image to the right of its container */
+  vertical-align: top; /* Aligns the top of the image with the top of the line */
+  text-align: center; /* (Has no effect on images, but harmless) */
+}
+
+/* Styles for images with class 'characterlist' */
+img.characterlist{
+  width: 171px; /* Sets width to 171 pixels */
+  height: 175px; /* Sets height to 175 pixels */
+}
+
+
+
+
+
+/* Styles for anchor (<a>) elements with class 'home' */
+a.home {
+  text-align: left; /* Aligns the text inside to the left */
+  transform: translate(-65%, -325%); /* Moves the element left and upward */
+  font-size: 50px; /* Sets font size to 50 pixels */
+  border-radius: 40px; /* Rounds corners with 40px radius */
+  border: 2px solid rgb(84,148,172); /* Adds a 2px solid border with color */
+  background-color: rgb(84,148,172); /* Sets background color */
+  color: whitesmoke; /* Sets text color to whitesmoke */
+  font-family: "Winky Sans"; /* Uses Winky Sans font */
+  text-decoration: none; /* Removes underline from the link */
+  padding: 10px 15px; /* Adds 10px top/bottom and 15px left/right padding */
+}
+
+/* Styles for anchor elements with class 'box' */
+a.box {
+  text-decoration: none; /* Removes underline from the link */
+  display: inline-block; /* Makes it behave like a block, but inline */
+  border: 1px solid; /* Adds a 1px solid border (default color) */
+  padding: 10px 25px; /* Adds padding inside the button */
+  background-color: rgb(84,148,172); /* Sets background color */
+  color: whitesmoke; /* Sets text color */
+  font-size: 38px; /* Sets font size */
+  font-family: "Winky Sans"; /* Applies Winky Sans font */
+}
+
+
+
+
+/* Styles for elements with class 'centered' */
 .centered{
-  position: absolute;
-  top: 50%; 
-  left: 50%;
-  transform: translate(-50%, -150%);
-  font-weight:bold;
-  font-size: 60px;
-  color: rgb(255, 255, 0);
-  text-decoration: underline;
-  font-family: "Winky Sans"
+  position: absolute; /* Removes from normal flow, positions absolutely */
+  top: 50%; /* Moves the top edge to 50% down the parent */
+  left: 50%; /* Moves the left edge to 50% across the parent */
+  transform: translate(-50%, -150%); /* Moves the element up and left to center it */
+  font-weight: bold; /* Makes text bold */
+  font-size: 60px; /* Sets font size */
+  color: rgb(255, 255, 0); /* Sets text color to yellow */
+  text-decoration: underline; /* Underlines the text */
+  font-family: "Winky Sans"; /* Uses Winky Sans font */
 }
 
-
+/* Styles for all <th> (table header) elements */
 th{
-  font-size: 37px;
-  padding-top: 1px;
-  font-weight: normal;
-  font-family: "Winky Sans" 
+  font-size: 37px; /* Sets font size */
+  padding-top: 1px; /* Adds 1px of padding above text */
+  font-weight: normal; /* Removes bold styling */
+  font-family: "Winky Sans"; /* Uses Winky Sans font */
 }
 
+/* Styles for all <td> table data elements */
 td{
-  padding-right: 30px;
-  padding-left: 30px;
-  font-size: 30px;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-family: "Winky Sans";
- 
-} 
-
-
-table.damage{
-     
-    border-collapse: collapse;
-    width: 100%;
+  padding-right: 30px; /* Adds space to the right */
+  padding-left: 30px; /* Adds space to the left */
+  font-size: 30px; /* Sets text size */
+  text-align: center; /* Centers text horizontally */
+  padding-top: 20px; /* Adds space above */
+  padding-bottom: 20px; /* Adds space below */
+  font-family: "Winky Sans"; /* Uses Winky Sans font */
 }
-tr.damage1{
-  border-bottom: 3px solid #000000;
- }
 
+
+
+
+
+/* Styles for images with class 'list2' */
 img.list2{
-  width: 170px;
-  height: 170px;
+  width: 170px; /* Sets width */
+  height: 170px; /* Sets height */
 }
 
+/* Styles for images with class 'list1' */
 img.list1{
-  width: 170px;
-  height: 170px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  width: 170px; /* Sets width */
+  height: 170px; /* Sets height */
+  padding-top: 25px; /* Adds space above */
+  padding-bottom: 25px; /* Adds space below */
 }
 
+
+
+
+
+
+
+/* Styles for tables with class 'damage' */
+table.damage{
+  border-collapse: collapse; /* Merges borders into single lines */
+  width: 100%; /* Makes table span the full width of its container */
+}
+
+
+/* Styles for table rows with class 'damage1' */
+tr.damage1{
+  border-bottom: 3px solid #000000; /* Adds a solid black line below the row */
+}
+
+
+/* Styles for table headers with class 'damage2' */
 th.damage2{
-font-weight: bold;
-font-size: 39px;
-padding-bottom: 20px;
-text-align: center;
-font-family: "Winky Sans";
-text-decoration: underline;
+  font-weight: bold; /* Makes text bold */
+  font-size: 39px; /* Sets font size */
+  padding-bottom: 20px; /* Adds space below */
+  text-align: center; /* Centers the text */
+  font-family: "Winky Sans"; /* Uses Winky Sans font */
+  text-decoration: underline; /* Underlines the text */
 }
-  
+
+/* Styles for table data cells with class 'damage3' */
 td.damage3{
-  font-weight: bold;
-  font-size: 35px;
-  text-decoration: underline;
-  font-family: "Winky Sans";
-  }
+  font-weight: bold; /* Makes text bold */
+  font-size: 35px; /* Sets font size */
+  text-decoration: underline; /* Underlines text */
+  font-family: "Winky Sans"; /* Applies font */
+}
 
+/* Styles for table headers with class 'damage4' */
 th.damage4{
-  font-size: 35px;
-  font-family: "Winky Sans";
+  font-size: 35px; /* Sets font size */
+  font-family: "Winky Sans"; /* Uses Winky Sans font */
 }
 
-td.long1{
-  width: 215px;
-  height: 335px;  
-}
 
+
+/* Styles for images with class 'Ranked1' */
 img.Ranked1{
-  padding-left: 26px;
-  padding-right: 27px;
+  padding-left: 26px; /* Adds space on the left */
+  padding-right: 27px; /* Adds space on the right */
 }
 
+
+
+
+/* Styles for images with class 'green1' */
 img.green1{
-  width:171px;
-  height:175px;
-  border: 9px solid greenyellow;
-  border-radius: 20px;
-  
+  width: 171px; /* Sets width */
+  height: 175px; /* Sets height */
+  border: 9px solid greenyellow; /* Adds green-yellow border */
+  border-radius: 20px; /* Rounds image corners */
 }
 
+/* Styles for images with class 'blue1' */
 img.blue1{
-  width:171px;
-  height:175px;
-  border: 9px solid rgb(10, 97, 246);
-  border-radius: 20px;
+  width: 171px; /* Sets width */
+  height: 175px; /* Sets height */
+  border: 9px solid rgb(10, 97, 246); /* Blue border */
+  border-radius: 20px; /* Rounds corners */
 }
 
+/* Styles for images with class 'epic1' */
 img.epic1{
-  height: 175px;
-  width: 171px;
- border: 9px solid rgb(255, 0, 255);
- border-radius: 20px;
+  height: 175px; /* Sets height */
+  width: 171px; /* Sets width */
+  border: 9px solid rgb(255, 0, 255); /* Purple border */
+  border-radius: 20px; /* Rounded corners */
 }
 
+/* Styles for images with class 'mythic1' */
 img.mythic1{
-  height: 175px;
-  width: 171px;
- border: 9px solid rgb(238, 6, 33);
- border-radius: 20px;
+  height: 175px; /* Sets height */
+  width: 171px; /* Sets width */
+  border: 9px solid rgb(238, 6, 33); /* Red border */
+  border-radius: 20px; /* Rounded corners */
 }
 
+/* Styles for images with class 'legendary1' */
 img.legendary1{
-  height: 175px;
-  width: 171px;
- border: 9px solid rgb(238, 255, 0);
- border-radius: 20px;
+  height: 175px; /* Sets height */
+  width: 171px; /* Sets width */
+  border: 9px solid rgb(238, 255, 0); /* Yellow border */
+  border-radius: 20px; /* Rounded corners */
 }
+
+
