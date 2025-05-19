@@ -38,9 +38,41 @@ h4{
   font-weight: bold; /* Makes the text bold */
 }
 
+/* Styles for all <p> elements */
+p{
+  text-align: center; /* Centers text within the element */
+  font-family: "Winky Sans"; /* Applies Winky Sans font */
+  text-decoration: underline overline; /* Underlines the text and overlines the text */
+  font-weight: bold; /* Makes the text bold */
+  font-size: 40px; /* Sets font size to 40 pixels */
+  padding-bottom: 50px; /* Adds space below */
+}
 
+p.words1{
+  text-align: center; /* Centers text within the element */
+  font-family: "Winky Sans"; /* Applies Winky Sans font */
+  font-weight: bold; /* Makes the text bold */
+  font-size: 33px; /* Sets font size to 40 pixels */
+  padding-bottom: 50px; /* Adds space below */
+  text-decoration: none;
+}
 
+p.words2{
+  text-align: center; /* Centers text within the element */
+  font-family: "Winky Sans"; /* Applies Winky Sans font */
+  font-weight: bold; /* Makes the text bold */
+  font-size: 37px; /* Sets font size to 40 pixels */
+  padding-bottom: 50px; /* Adds space below */
+  text-decoration: none;
+}
 
+p.words3{
+  text-align: center; /* Centers text within the element */
+  font-family: "Winky Sans"; /* Applies Winky Sans font */
+  font-weight: bold; /* Makes the text bold */
+  font-size: 43px; /* Sets font size to 40 pixels */
+  text-decoration: none;
+}
 
 /* Styles for all <img> elements */
 img{
